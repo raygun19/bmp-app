@@ -1,0 +1,315 @@
+@font-face {
+  font-family: "AvertaStd-Light";
+  src: url("../styles/AvertaStd-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AvertaStd-Bold";
+  src: url("../styles/AvertaStd-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AvertaStd-Thin";
+  src: url("../styles/AvertaStd-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AvertaStd-Regular";
+  src: url("../styles/AvertaStd-Regular.ttf") format("truetype");
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 200px;
+}
+
+.image-gallery img {
+  max-width: 200px;
+  height: auto;
+}
+
+.carousel .slide .legend {
+  display: none;
+}
+
+.carousel .control-dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 10px 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.carousel .thumbs {
+  display: none;
+}
+
+.carousel .slide {
+  max-width: 200px;
+}
+
+.carousel .slider-wrapper {
+  overflow: hidden;
+  margin: auto;
+  width: 100%;
+  transition: height .15s ease-in;
+  max-width: 200px;
+}
+
+.carousel.carousel-slider {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+}
+
+.instrument-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid #E2E2E2;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 2px 2px 4px rgba(175, 175, 175, 0.2);
+}
+
+.instruments-button {
+  background-color: #e4e4e4;
+  padding: 10px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.instruments-button:hover {
+  background-color: #d8d8d8;
+}
+
+.instruments-button-text {
+  color: #666666;
+  font-family: AvertaStd-Bold;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.instruments-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 5px;
+  background: #FFFDFB;
+  border-radius: 10px;
+  border: 1px solid #E2E2E2;
+  background-color: #FDFDFD;
+  margin: 20px;
+  flex: 1 1;
+  align-self: stretch;
+  justify-content: stretch;
+  align-content: space-between;
+  width: 20px;
+}
+
+@media (max-width: 768px) {
+
+  .instruments-container {
+    margin: 5px;
+  }
+}
+
+.instruments-header {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.instrument-list-main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.instrument-list-container {
+  display: grid;
+  gap: 15px;
+  overflow: auto;
+  height: 100%;
+  border: 1px solid #E2E2E2;
+  background-color: #F6F6F6;
+  padding-left: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 10px;
+  border-radius: 3px;
+}
+
+@media screen and (min-width: 1200px) {
+  .instrument-list-container {
+    grid-template-columns: repeat(3, 1fr);
+
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .instrument-list-container {
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .instrument-list-container {
+
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.instrument-description-container {
+  font-size: 14px;
+}
+
+.instrument-description-container>* {
+  font-size: 14px;
+}
+
+.instrument-description-container>*>* {
+  font-size: 14px;
+}
+
+.instrument-description-container>*>*>* {
+  font-size: 14px;
+}
+
+.instrument-description-container>*>*>*>* {
+  font-size: 14px;
+}
+
+.instrument-description-container>*>*>*>*>* {
+  font-size: 14px;
+}
+
+.image-gallery2 {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.image-gallery2 img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.instruments-flex-col {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.shopify-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  background: #027e3e;
+}
+
+.shopify-button-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-family: AvertaStd-Bold;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.shopify-button:hover {
+  background: #015e2e;
+}
+
+.instruments-split-top {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.button-29 {
+  background-color: #20B7F0;
+  border: 0 solid #E5E7EB;
+  box-sizing: border-box;
+  color: #000000;
+  display: flex;
+  font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: .75rem 1.65rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  width: 100%;
+  max-width: 460px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 10px;
+}
+
+.button-29:focus {
+  outline: 0;
+}
+
+.button-29:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.button-29:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+  .button-29 {
+    padding: .75rem 3rem;
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .button-29 {
+    padding: .2rem .1rem;
+    font-size: 10px;
+  }
+}

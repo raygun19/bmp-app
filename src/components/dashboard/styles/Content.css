@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "AvertaStd-Light";
+    src: url("../styles/AvertaStd-Light.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "AvertaStd-Bold";
+    src: url("../styles/AvertaStd-Bold.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "AvertaStd-Thin";
+    src: url("../styles/AvertaStd-Thin.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "AvertaStd-Regular";
+    src: url("../styles/AvertaStd-Regular.ttf") format("truetype");
+  }
+
+.content-header {
+    padding: 20px;
+    border-radius: 2px;
+}
+
+.header1 {
+    color: #000;
+    font-family: AvertaStd-Thin;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.header2 {
+    color: #000;
+    font-family: AvertaStd-Regular;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header3 {
+    color: #000;
+    font-family: AvertaStd-Bold;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.box {
+    border: 1px solid #E2E2E2;
+    padding: 20px;
+    background-color: #FDFDFD;
+    height: 60px;
+    margin: 10px;
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    .header1 {
+        font-size: 24px;
+    }
+
+    .header2 {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,340 @@
+@font-face {
+    font-family: "AvertaStd-Light";
+    src: url("../styles/AvertaStd-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "AvertaStd-Bold";
+    src: url("../styles/AvertaStd-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "AvertaStd-Thin";
+    src: url("../styles/AvertaStd-Thin.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "AvertaStd-Regular";
+    src: url("../styles/AvertaStd-Regular.ttf") format("truetype");
+}
+
+.settings-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+    background: #FFFDFB;
+    border-radius: 10px;
+    border: 1px solid #E2E2E2;
+    background-color: #FDFDFD;
+    margin: 20px;
+    flex: 1 1;
+    align-self: stretch;
+    justify-content: stretch;
+    align-content: space-between;
+    width: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .settings-container {
+        margin: 5px;
+    }
+
+    .settings-label-reg {
+        font-size: 11px;
+        transform: translateY(20%);
+    }
+}
+
+.settings-header {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.settings-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    background-color: #F6F6F6;
+    padding: 15px;
+    border: 1px solid #dbdbdb;
+    flex: 1;
+    border-radius: 3px;
+    overflow: auto;
+}
+
+.settings-password-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 2px 15px rgba(131, 131, 131, 0.075);
+    border-radius: 10px;
+    padding: 15px;
+    flex: 1;
+}
+
+.settings-email-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 2px 15px rgba(131, 131, 131, 0.075);
+    border-radius: 10px;
+    padding: 15px;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.settings-terms-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 2px 15px rgba(131, 131, 131, 0.075);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+    flex: 1;
+}
+
+.settings-privacy-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 2px 15px rgba(131, 131, 131, 0.075);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex: 1;
+}
+
+.settings-help-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 2px 15px rgba(131, 131, 131, 0.075);
+    border-radius: 10px;
+    padding: 15px;
+    flex: 1;
+}
+
+.settings-text {
+    padding-bottom: 5px;
+}
+
+.settings-space-under {
+    margin-bottom: 30px;
+}
+
+.settings-space-under-small {
+    margin-bottom: 10px;
+}
+
+.reset-pass-button {
+    color: #005472;
+    background-color: #ecfaff;
+    width: 100%;
+    margin-left: -1px;
+}
+
+.reset-pass-button:hover {
+    background-color: #cbf1ff;
+}
+
+.settings-email-current-sb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.reset-email-button {
+    color: #00612f;
+    background-color: #e1fff0;
+    width: 100%;
+}
+
+.reset-email-button:hover {
+    background-color: #c9f3dc;
+}
+
+.help-button {
+    color: #b40006;
+    background-color: #ffe6e6;
+}
+
+.help-button:hover {
+    background-color: #ffcdce;
+}
+
+.settings-button-54 {
+    font-family: AvertaStd-Bold;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.settings-button-54:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+}
+
+
+.current-email {
+    display: flex;
+    flex-direction: row;
+    background-color: #f8f8f8;
+    border: 1px solid #cacaca;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.reset-email-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 2;
+    height: fit-content;
+    background-color: #f8f8f8;
+    border: 1px solid #cacaca;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.subscribe-email-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: fit-content;
+    background-color: #f8f8f8;
+    border: 1px solid #cacaca;
+    padding: 10px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.settings-email-top {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.reset-email-header {
+    padding-bottom: 30px;
+}
+
+.settings-label {
+    display: flex;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.settings-label-bold {
+    display: flex;
+    flex-direction: row;
+    font-family: AvertaStd-Bold;
+}
+
+.settings-input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.settings-label-reg {
+    margin-left: 10px;
+    font-family: AvertaStd-Regular;
+}
+
+.settings-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.settings-input {
+    display: flex;
+    flex: 2;
+    padding: 8px;
+    display: block;
+    border: 3px solid #e9e9e9;
+    border-bottom: 1px solid #b1b1b1;
+    width: 100%;
+    background-color: #FDFDFD;
+    height: 18px;
+}
+
+.settings-input:focus {
+    outline: none !important;
+    border: 2px solid #b1b1b1;
+    border-radius: 2px;
+    box-shadow: 0 0 10px #c5c5c5;
+}
+
+.settings-right-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.terms-button {
+    color: #9e1967;
+    background-color: #ffebf7;
+}
+
+.terms-button:hover {
+    background-color: #ffd0eb;
+}
+
+.privacy-button {
+    color: #da7401;
+    background-color: #fff3e6;
+}
+
+.privacy-button:hover {
+    background-color: #ffe4c6;
+}
+
+@media (max-width: 1110px) {
+    .settings-content {
+        flex-direction: column;
+    }
+
+    .settings-email-container {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-height: 640px) {
+    .settings-content {
+        flex-direction: column;
+    }
+
+    .settings-email-container {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+}

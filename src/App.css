@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,15 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+html, body, #root, .top-level {
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+}
+
+* {
+cursor: default !important;
 }

@@ -1,0 +1,276 @@
+@font-face {
+    font-family: "AvertaStd-Light";
+    src: url("./AvertaStd-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "AvertaStd-Bold";
+    src: url("./AvertaStd-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "AvertaStd-Thin";
+    src: url("./AvertaStd-Thin.ttf") format("truetype");
+}
+
+.page-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-v-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.flex-h-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.self-center {
+    align-self: center;
+    font-family: AvertaStd-Bold;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 2rem;
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    border: 1px solid #F79420;
+    background: #FFFDFB;
+    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.25);
+}
+
+.field-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 1rem;
+    align-items: stretch;
+}
+
+.field-container > * {
+    font-family: AvertaStd-Regular;
+}
+
+.field {
+    display: flex;
+    height: 2rem;
+    font-family: AvertaStd-Light;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid #20B7F0;
+    background: #FFF;
+}
+
+.field:hover {
+    background: #f4f8fc;
+}
+
+.label {
+    color: #000;
+    font-family: AvertaStd-Light;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    background: #03A552;
+}
+
+.button-spaced {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    background: #03A552;
+    margin-top: 3rem;
+}
+
+/* .login-button {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    background: #03A552;
+    margin-top: 3rem;
+} */
+
+
+.login-button-1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #03A552;
+    background: #cef7e2;
+    cursor: pointer;
+    border: 1px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 15px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 3px;
+    width: 150px;
+  }
+  
+  .login-button-1:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+  }
+  
+  .login-button-1:hover {
+    background: #baeed3;
+    }
+  
+.button:hover {
+    background: #027e3e;
+}
+
+.button-text {
+    color: #FFF;
+    font-family: AvertaStd-Bold;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.login-button-text {
+    color: rgb(19, 19, 19);
+    font-family: AvertaStd-Bold;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.error-text {
+    color: #ff0000;
+    font-family: AvertaStd-Bold;
+    font-size: 1rem;
+    padding-bottom: 2rem;
+}
+
+.forgot-password {
+    color: #000000;
+    font-family: AvertaStd-Thin;
+    font-size: .8rem;
+    padding-top: 1rem;
+    align-self: center;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+    color: #005879;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+/* Default styles for all screen sizes */
+.background-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.add-user-button {
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+/* Styles for screens up to 768px wide (phones) */
+@media (max-width: 768px) {
+  .background-container {
+    background-image: url('./login-bg-phone.png'); 
+  }
+}
+
+/* Styles for screens 769px to 992px wide (tablets) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .background-container {
+    background-image: url('./login-bg-tablet.png'); 
+  }
+}
+
+/* Styles for screens 993px to 1200px wide (small laptops and desktops) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .background-container {
+    background-image: url('./login-bg-desktop.png'); 
+  }
+}
+
+/* Styles for screens larger than 1200px wide (large laptops and desktops) */
+@media (min-width: 1201px) {
+  .background-container {
+    background-image: url('./login-bg-xl.png'); 
+  }
+}
+
+@media (max-width: 768px) {
+    .page-container {
+        flex-direction: column;
+        
+
+
+    }
+
+    .content {
+        height: 90%;
+        width: 100%;
+    }
+
+
+
+}

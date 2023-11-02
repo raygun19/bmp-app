@@ -1,0 +1,218 @@
+@font-face {
+  font-family: "AvertaStd-Light";
+  src: url("../styles/AvertaStd-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AvertaStd-Bold";
+  src: url("../styles/AvertaStd-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AvertaStd-Thin";
+  src: url("../styles/AvertaStd-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AvertaStd-Regular";
+  src: url("../styles/AvertaStd-Regular.ttf") format("truetype");
+}
+
+.overview-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 5px;
+  background: #FFFDFB;
+  border-radius: 10px;
+  border: 1px solid #E2E2E2;
+  background-color: #FDFDFD;
+  margin: 20px;
+  flex: 1;
+  align-self: stretch;
+  justify-content: stretch;
+  align-content: space-between;
+  width: 20px;
+}
+
+.overview-header {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.overview-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  background-color: #F6F6F6;
+  padding: 5px;
+  border: 1px solid #dbdbdb;
+  flex: 1;
+  border-radius: 3px;
+}
+
+.overview-content-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px;
+  overflow: hidden;
+
+}
+
+.ov-calendar-container {
+  box-shadow: 0 2px 15px rgba(131, 131, 131, 0.075);
+  border: 1px solid #e2e2e2;
+  background-color: white;
+}
+
+.ov-agenda-container {
+  background-color: #CDEDDC;
+  border: 1px solid #03A552;
+  margin-top: 10px;
+}
+
+.ov-alerts-container {
+  height: 100%;
+  box-shadow: 0 2px 15px rgba(131, 131, 131, 0.075);
+  border: 1px solid #e2e2e2;
+  background-color: white;
+  margin-left: 0px;
+}
+
+.ov-requests-container {
+  height: 100%;
+  box-shadow: 0 2px 15px rgba(131, 131, 131, 0.075);
+  border: 1px solid #e2e2e2;
+  background-color: white;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+.ov-flex-col {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+.ov-flex-row {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  overflow: hidden;
+}
+
+.ov-space-below {
+  margin-bottom: 10px;
+}
+
+.ov-full-height {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+}
+
+@media (min-width: 1450px) {
+
+  .dash-cal>.rbc-toolbar {
+    font-size: 16px;
+  }
+
+  .dash-cal>.rbc-toolbar button {
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 1450px) {
+
+  .dash-cal>.rbc-toolbar {
+    font-size: 16px;
+  }
+
+  .dash-cal>.rbc-toolbar button {
+    font-size: 12px;
+    padding: 3px;
+  }
+}
+
+@media (max-width: 1285px) {
+
+  .dash-cal>.rbc-toolbar {
+    font-size: 12px;
+  }
+
+  .dash-cal>.rbc-toolbar button {
+    font-size: 11px;
+    padding: 3px;
+  }
+}
+
+@media (max-width: 1200px) {
+
+  .dash-cal > .rbc-toolbar {
+    font-size: 14px;
+  }
+
+  .dash-cal>.rbc-toolbar button {
+    font-size: 12px;
+    padding: 4px;
+    background-color: red;
+  }
+
+  .rbc-btn-group > * {
+    font-size: 10px;
+  }
+
+}
+
+@media (max-width: 1035px) {
+
+  .ov-flex-row {
+    flex-direction: column;
+    overflow: auto;
+  }
+
+  .ov-calendar-container {
+    min-height: 400px;
+    margin-bottom: 0px;
+  }
+
+  .ov-alerts-container {
+    margin-left: 15px;
+    min-height: 400px;
+    max-height: 401px;
+  }
+
+  .ov-requests-container {
+    margin-left: 15px;
+    min-height: 400px;
+    max-height: 401px;
+  }
+
+  .ov-flex-col {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+  }
+
+  .rbc-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .overview-container {
+    margin: 5px;
+  }
+}

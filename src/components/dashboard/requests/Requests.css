@@ -1,0 +1,271 @@
+@font-face {
+  font-family: "AvertaStd-Light";
+  src: url("../styles/AvertaStd-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AvertaStd-Bold";
+  src: url("../styles/AvertaStd-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AvertaStd-Thin";
+  src: url("../styles/AvertaStd-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AvertaStd-Regular";
+  src: url("../styles/AvertaStd-Regular.ttf") format("truetype");
+}
+
+.rq-flex-col {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+.rq-flex-row {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  overflow: hidden;
+}
+
+.requests-main-header {
+  padding-top: 10px;
+  padding-bottom: 14px;
+}
+
+.requests-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 5px;
+  background: #FFFDFB;
+  border-radius: 10px;
+  border: 1px solid #E2E2E2;
+  background-color: #FDFDFD;
+  margin: 20px;
+  flex: 1 1;
+  align-self: stretch;
+  justify-content: stretch;
+  align-content: space-between;
+  width: 20px;
+}
+
+@media (max-width: 768px) {
+  .requests-container {
+    margin: 5px;
+  }
+}
+
+.requests-main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.requests-list-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  height: 100%;
+  border: 1px solid #E2E2E2;
+  background-color: #F6F6F6;
+  padding: 5px;
+  border: 1px solid #E2E2E2;
+  border-radius: 3px;
+  margin-bottom: 0;
+}
+
+.requests-label-bold {
+  font-family: AvertaStd-Bold;
+  margin-right: 5px;
+}
+
+.requests-listview-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #E2E2E2;
+  background-color: #FDFDFD;
+  padding: 5px;
+}
+
+.requests-listview-item-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid #E2E2E2;
+  background-color: #FDFDFD;
+  padding: 5px;
+}
+
+.rq-teachers-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.requests-flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 5px;
+  font-family: AvertaStd-Regular;
+}
+
+.requests-search-bar {
+  font-family: AvertaStd-Regular;
+  font-size: 17px;
+  height: 24px;
+  margin-bottom: 5px;
+}
+
+.requests-header {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.requests-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  background-color: #F6F6F6;
+  padding: 5px;
+  border: 1px solid #dbdbdb;
+  flex: 1;
+  border-radius: 3px;
+}
+
+.requests-listview-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  background-color: #F6F6F6;
+  border-radius: 3px;
+  padding: 5px;
+  height: fit-content;
+  overflow: auto;
+}
+
+.requests-listview-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #E2E2E2;
+  background-color: #FDFDFD;
+  padding: 5px;
+}
+
+.requests-listview-item:hover {
+  background-color: #e7f9ff
+}
+
+.requests-listview-item-row:hover {
+  background-color: #e7f9ff
+}
+
+.rqts-main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.rqts-list-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  height: 100%;
+  border: 1px solid #E2E2E2;
+  background-color: #F6F6F6;
+  border: 1px solid #E2E2E2;
+  border-radius: 3px;
+  margin-bottom: 0;
+}
+
+.rqts-label-bold {
+  font-family: AvertaStd-Bold;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.rqts-listview-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #E2E2E2;
+  background-color: #FDFDFD;
+  padding: 5px;
+}
+
+.rqts-flex-row {
+  display: flex;
+  flex-direction: row;
+  font-family: AvertaStd-Regular;
+}
+
+.requests-students-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  background-color: #F6F6F6;
+  padding: 15px;
+  border: 1px solid #dbdbdb;
+  flex: 1 1;
+  border-radius: 3px;
+  overflow: auto;
+}
+
+.requests-students-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 2px 15px rgba(131, 131, 131, 0.075);
+  border-radius: 10px;
+  padding: 15px;
+  flex: 1 1;
+  overflow: hidden;
+  min-height: 275px;
+}
+
+.rsc-top {
+  margin-bottom: 10px;
+}
+
+.new-request-space-under {
+  margin-bottom: 15px;
+}
+
+.srq-input {
+  display: flex;
+  flex: 1;
+  padding: 8px;
+  border: 3px solid #e9e9e9;
+  border-bottom: 1px solid #b1b1b1;
+  background-color: #FDFDFD;
+  height: 18px;
+
+}
+
+.srq-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+}
+
+.srq-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.srq-sb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}

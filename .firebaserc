@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "bravo-portal",
+    "bravo-portal": "bravo-portal"
+  },
+  "targets": {},
+  "etags": {}
+}
